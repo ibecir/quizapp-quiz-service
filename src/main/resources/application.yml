@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: quiz
+  application:
+    name: quiz-service
+
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: debug
+server:
+  port: 8082
